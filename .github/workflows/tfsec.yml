@@ -1,4 +1,6 @@
+---
 name: tfsec
+
 on:
   push:
     branches:
@@ -7,9 +9,15 @@ on:
     branches:
       - main
 jobs:
+
   tfsec:
     name: tfsec sarif report
     runs-on: ubuntu-latest
+
+    permissions:
+      security-events: write
+      actions: read
+      contents: read
 
     steps:
       - name: Clone repo
