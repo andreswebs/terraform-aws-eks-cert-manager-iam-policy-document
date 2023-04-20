@@ -1,5 +1,7 @@
 # terraform-aws-eks-cert-manager-iam-policy-document
 
+Generates IAM policy document JSON contents for cert-manager.
+
 [//]: # (BEGIN_TF_DOCS)
 
 
